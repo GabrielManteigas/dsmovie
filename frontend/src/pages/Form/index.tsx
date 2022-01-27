@@ -17,11 +17,11 @@ function Form() {
                 <h3>{movie.title}</h3>
                 <form className="dsmovie-form">
                     <div className="form-group dsmovie-form-group">
-                        <label htmlFor="email">Informe seu email</label>
+                        <label htmlFor="email">Informe o seu email</label>
                         <input type="email" className="form-control" id="email" />
                     </div>
                     <div className="form-group dsmovie-form-group">
-                        <label htmlFor="score">Informe sua avaliação</label>
+                        <label htmlFor="score">Informe a sua avaliação</label>
                         <select className="form-control" id="score">
                             <option>1</option>
                             <option>2</option>
