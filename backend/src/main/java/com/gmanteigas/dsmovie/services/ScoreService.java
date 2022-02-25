@@ -1,5 +1,7 @@
 package com.gmanteigas.dsmovie.services;
 
+import java.util.Set;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -46,11 +48,13 @@ public class ScoreService {
 		
 		double sum = 0.0;
 		
-		for(Score s : movie.getScores()) {
+		Set<Score> list =  movie.getScores();
+		
+		for(Score s : list) {
 			sum = sum + s.getValue();
 		}
 		
-		int allScores = movie.getScores().size();
+		int allScores = list.size();
 		
 		double avg = sum / allScores;
 		
